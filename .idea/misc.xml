@@ -1,0 +1,62 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/gradient_rev.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/home_bottom_tab_bg.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/rounded_corners_dark.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/rounded_corners_light.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/rounded_corners_search.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/rounded_dialog.xml" value="0.1165" />
+        <entry key="app/src/main/res/drawable/rounded_otp.xml" value="0.1165" />
+        <entry key="app/src/main/res/layout/activity_appointment.xml" value="0.18294982910156252" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_doc_list.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_doctor_past_appointment.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_doctor_pending_appointment.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_doctor_profile.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_doctor_upcoming_appointment.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/activity_patient_past_appointment.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_patient_upcoming_appointment.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_presc.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_upload.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/dropdown_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_doc_list.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_doctor_sign_up.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.2751745384859751" />
+        <entry key="app/src/main/res/layout/fragment_otp.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.24791666666666667" />
+        <entry key="app/src/main/res/layout/fragment_user_type.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/item_doctor.xml" value="0.29375" />
+        <entry key="app/src/main/res/layout/item_doctor_past_appointment.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_doctor_pending_appointment.xml" value="0.4336410522460938" />
+        <entry key="app/src/main/res/layout/item_doctor_upcoming_appointment.xml" value="0.12552083333333333" />
+        <entry key="app/src/main/res/layout/item_patient_past_appointment.xml" value="0.12552083333333333" />
+        <entry key="app/src/main/res/layout/item_patient_upcoming_appointment.xml" value="0.23611501057942705" />
+        <entry key="app/src/main/res/layout/layout_spec.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/menu/home_menu.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

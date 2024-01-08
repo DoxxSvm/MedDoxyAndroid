@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/lato_bold"
+
+                android:maxLines="2"
+                android:layout_marginHorizontal="20dp"
+
+                android:text="Not feeling too well?\nChoose any department to consult"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/dark"
+                android:textSize="17dp"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_light"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/main"
+                android:layout_marginTop="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintTop_toBottomOf="@id/top">
+
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/neurology"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/dermatology"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/neurology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Neurology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                         />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/dermatology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/skin" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Dermatology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/psychiatry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/psychiatry" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Psychiatry"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                         />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/ayurveda"
+                    app:layout_constraintTop_toBottomOf="@id/dermatology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/cardiology"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/ayurveda" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Ayurveda"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cardiology"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/dermatology"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/cardiology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Cardiology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/dermatology"
+                    android:id="@+id/dental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/dental" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Dental"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/diet"
+                    app:layout_constraintTop_toBottomOf="@id/cardiology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/cardiology"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/diet" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Diet"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/endocrinology"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/cardiology"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/endocrinology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Endocrinology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/cardiology"
+                    android:id="@+id/ent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/ent" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Eye Nose Throat"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/gastro"
+                    app:layout_constraintTop_toBottomOf="@id/endocrinology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/cardiology"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/gastroenterology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Gastroenterology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/generalsurgery"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/endocrinology"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/generalsurgery" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="General Surgery"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/endocrinology"
+                    android:id="@+id/homeoopathy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/homeopathy" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Homeopathy"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/nephrology"
+                    app:layout_constraintTop_toBottomOf="@id/gastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/oncology"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/nephrology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Nephrology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/oncology"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/gastro"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/oncology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Oncology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/gastro"
+                    android:id="@+id/ophthalmologist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/ophthalmologist" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Ophthalmologist"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+
+                    android:id="@+id/pediatrics"
+                    app:layout_constraintTop_toBottomOf="@id/nephrology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@+id/physiotherapy"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/pediatrics" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Pediatrics"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/physiotherapy"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/nephrology"
+                    app:layout_constraintEnd_toStartOf="@+id/psychiatry"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/neurology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/physiotherapy" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Physiotherapy"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    app:layout_constraintTop_toBottomOf="@id/nephrology"
+                    android:id="@+id/rheumatology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/dermatology"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                        app:srcCompat="@drawable/rheumatology" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Rheumatology"
+                        android:textColor="@color/dark"
+                        android:textSize="17dp"
+                        />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

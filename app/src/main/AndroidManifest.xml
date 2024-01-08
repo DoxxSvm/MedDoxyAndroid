@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.oogwayapps.meddoxy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MedApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedDoxy"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".screens.DoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DoctorPendingAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DoctorUpcomingAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DoctorPastAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.PrescActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.PatientPastAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.PatientUpcomingAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.AppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DocListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.DashboardActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

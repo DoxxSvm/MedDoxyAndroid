@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.AppointmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/top"
+                android:background="@drawable/rounded_corners_light"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img"
+
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                    app:srcCompat="@drawable/doc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr shivam"
+                    android:textColor="@color/dark"
+                    android:id="@+id/name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/img"
+                    app:layout_constraintBottom_toBottomOf="@id/img"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/speciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Neurologist"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lato_regular"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Dr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\nDr shivam\n"
+                    app:layout_constraintTop_toBottomOf="@id/img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/fees_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Fees:"
+                    app:layout_constraintTop_toBottomOf="@id/desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/fees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+
+                    app:layout_constraintStart_toEndOf="@id/fees_tv"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/fees_tv"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Days Available:"
+                    app:layout_constraintTop_toBottomOf="@id/fees_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/days"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="MON, TUE"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@id/day_tv"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/day_tv"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/consultation_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Consultations:"
+                    app:layout_constraintTop_toBottomOf="@id/day_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/consultations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4525"
+
+                    app:layout_constraintStart_toEndOf="@id/consultation_tv"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/consultation_tv"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Rating:"
+                    app:layout_constraintTop_toBottomOf="@id/consultation_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6"
+
+                    app:layout_constraintStart_toEndOf="@id/rating_tv"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/rating_tv"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/exp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Experience:"
+                    app:layout_constraintTop_toBottomOf="@id/rating_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 years"
+
+                    app:layout_constraintStart_toEndOf="@id/exp_tv"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/exp_tv"
+
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Address:"
+                    app:layout_constraintTop_toBottomOf="@id/exp_tv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 years"
+
+                    app:layout_constraintStart_toEndOf="@id/address_tv"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/dark"
+                    app:layout_constraintBottom_toBottomOf="@id/address_tv"
+
+                    android:layout_marginStart="20dp"/>
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/date_btn"
+                android:fontFamily="@font/lato_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/top"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Select Date"
+                android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/slot_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/date_btn"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/lato_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Select Slot"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                app:layout_constraintStart_toEndOf="@id/date_btn"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/dark"
+                app:layout_constraintBottom_toBottomOf="@id/date_btn"
+                app:layout_constraintTop_toTopOf="@id/date_btn"
+
+                android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/slot_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                app:layout_constraintStart_toEndOf="@id/slot_btn"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/dark"
+                app:layout_constraintBottom_toBottomOf="@id/slot_btn"
+                app:layout_constraintTop_toTopOf="@id/slot_btn"
+
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Appointment"
+
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/dark"
+                app:layout_constraintTop_toBottomOf="@id/slot_btn"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_corners_light"
+
+                android:layout_marginTop="40dp"/>
+            <TextView
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to favorite"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/dark"
+                app:layout_constraintTop_toBottomOf="@id/book"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rounded_corners_light"
+
+                android:layout_marginTop="20dp"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

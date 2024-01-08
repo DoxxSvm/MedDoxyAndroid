@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.PatientSignUpFragment">
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="25sp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:id="@+id/signup_tv"
+
+        android:textColor="@color/dark_1"
+        android:background="@drawable/rounded_otp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintTop_toBottomOf="@id/signup_tv"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        android:padding="3dp"
+        android:id="@+id/user_input_layout"
+        app:boxStrokeColor="@color/dark_1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_input"
+            android:layout_width="match_parent"
+            android:hint="Name"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/state_layout"
+        app:endIconDrawable="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintTop_toBottomOf="@id/user_input_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/state_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_light"
+            android:textColor="@color/dark"
+            android:inputType="none"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"
+            android:hint="State"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/city_layout"
+        app:endIconDrawable="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintTop_toBottomOf="@id/state_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_light"
+            android:textColor="@color/dark"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="20sp"
+            android:hint="City"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="500dp"
+        android:backgroundTint="@color/dark_1"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

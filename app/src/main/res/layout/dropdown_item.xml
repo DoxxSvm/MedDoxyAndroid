@@ -1,0 +1,12 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offerType_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:fontFamily="@font/lato_regular"
+    />

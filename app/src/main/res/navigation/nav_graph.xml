@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.oogwayapps.meddoxy.screens.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@transition/slide_in_right"
+            app:exitAnim="@transition/slide_out_left"
+            app:popEnterAnim="@transition/slide_in_left"
+            app:popExitAnim="@transition/slide_out_right"/>
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardActivity"
+            app:destination="@id/dashboardActivity" />
+        <action
+            android:id="@+id/action_splashFragment_to_doctorProfileActivity"
+            app:destination="@id/doctorProfileActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.oogwayapps.meddoxy.screens.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_userTypeFragment"
+            app:destination="@id/userTypeFragment" />
+        <action
+            android:id="@+id/action_loginFragment2_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="com.oogwayapps.meddoxy.screens.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.oogwayapps.meddoxy.screens.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_dashboardActivity"
+            app:destination="@id/dashboardActivity" />
+        <action
+            android:id="@+id/action_otpFragment_to_doctorProfileActivity"
+            app:destination="@id/doctorProfileActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.oogwayapps.meddoxy.screens.PatientSignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userTypeFragment"
+        android:name="com.oogwayapps.meddoxy.screens.UserTypeFragment"
+        android:label="fragment_user_type"
+        tools:layout="@layout/fragment_user_type" >
+        <action
+            android:id="@+id/action_userTypeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_userTypeFragment_to_doctorSignUpFragment"
+            app:destination="@id/doctorSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorSignUpFragment"
+        android:name="com.oogwayapps.meddoxy.screens.DoctorSignUpFragment"
+        android:label="fragment_doctor_sign_up"
+        tools:layout="@layout/fragment_doctor_sign_up" >
+        <action
+            android:id="@+id/action_doctorSignUpFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/doctorProfileActivity"
+        android:name="com.oogwayapps.meddoxy.screens.DoctorProfileActivity"
+        android:label="DoctorProfileActivity" />
+</navigation>

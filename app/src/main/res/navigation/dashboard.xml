@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.oogwayapps.meddoxy.screens.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_docListActivity"
+            app:destination="@id/docListActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment2"
+        android:name="com.oogwayapps.meddoxy.screens.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.oogwayapps.meddoxy.screens.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_patientUpcomingAppointmentActivity2"
+            app:destination="@id/patientUpcomingAppointmentActivity2" />
+        <action
+            android:id="@+id/action_profileFragment2_to_patientPastAppointmentActivity"
+            app:destination="@id/patientPastAppointmentActivity" />
+        <action
+            android:id="@+id/action_profileFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/docListActivity"
+        android:name="com.oogwayapps.meddoxy.screens.DocListActivity"
+        android:label="activity_doc_list"
+        tools:layout="@layout/activity_doc_list" >
+        <argument
+            android:name="specialization"
+            app:argType="string" />
+    </activity>
+    <activity
+        android:id="@+id/appointmentActivity"
+        android:name="com.oogwayapps.meddoxy.screens.AppointmentActivity"
+        android:label="activity_appointment"
+        tools:layout="@layout/activity_appointment" />
+    <activity
+        android:id="@+id/patientUpcomingAppointmentActivity2"
+        android:name="com.oogwayapps.meddoxy.screens.PatientUpcomingAppointmentActivity"
+        android:label="activity_patient_upcoming_appointment"
+        tools:layout="@layout/activity_patient_upcoming_appointment" />
+    <activity
+        android:id="@+id/patientPastAppointmentActivity"
+        android:name="com.oogwayapps.meddoxy.screens.PatientPastAppointmentActivity"
+        android:label="activity_patient_past_appointment"
+        tools:layout="@layout/activity_patient_past_appointment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.oogwayapps.meddoxy.screens.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+</navigation>

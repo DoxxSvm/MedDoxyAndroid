@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/root"
+    android:background="@drawable/rounded_corners_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:strokeColor="@color/dark_1"
+        app:strokeWidth="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:srcCompat="@drawable/userhh" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Dr Shivam Gupta"
+        app:layout_constraintTop_toTopOf="@id/img"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/img"
+        android:textColor="@color/dark"
+        android:textSize="17dp"
+        />
+    <View
+        android:id="@+id/view"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:background="@color/dark_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="4-5-2022"
+        app:layout_constraintTop_toBottomOf="@id/view"
+
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/dark"
+        android:textSize="17dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:id="@+id/slot"
+        android:text="5:44"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+
+
+        android:textColor="@color/dark"
+        android:textSize="17dp"
+        />
+    <Button
+        android:id="@+id/upload_pres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Upload prescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_regular"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
